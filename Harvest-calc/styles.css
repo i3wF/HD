@@ -345,7 +345,7 @@ footer{
 @media (max-width: 768px){
 /* For Mobile */
 footer{
-    margin-top: 100%;
+    margin-top: 10%;
 }
 }
 
