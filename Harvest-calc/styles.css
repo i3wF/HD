@@ -1,0 +1,297 @@
+body{
+  width: auto;
+  background-color: #c4e8fc;
+  padding-top: 60px;
+}
+
+.bg-nav{
+  background-color: #c4e8fc;
+}
+nav img{  
+max-width: 100%;
+height: 45px;         
+}
+
+label[for="tree-amount"] {
+  font-weight: bold;
+  color: #000;
+  margin-top: 15px;
+  margin-right: 38%;
+}
+
+.content {
+  margin-right: 30%;
+  width: 40%;
+  border: none;
+  border-bottom: 2px solid red;
+  background: transparent;
+  background-color: rgba(255, 255, 255, .4);
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 20px;
+  padding-right: 28%;
+  color: #000;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+position: relative;
+}
+
+.input-label {
+position: absolute;
+top: -30px;
+left: 50%;
+transform: translateX(-50%);
+padding: 5px 10px;
+background-color: rgba(0, 0, 0, 0.6);
+color: #fff;
+font-size: 16px;
+border-radius: 5px;
+}
+
+input[type="number"]{
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 30%;
+}
+
+select{
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 37.9%;
+}
+
+button {
+  padding: 10px 30px;
+  font-size: 22px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.g1 {
+  margin-right: 35%;
+  margin-top: 15px;
+}
+
+.results p {
+  margin-left: 10%;
+}
+
+
+.results span {
+  font-weight: bold;
+}
+
+.results {
+  background-color: white;
+  border-radius: 6px;
+  max-width:65%;
+  height: 510px; 
+  margin-right: 20%;
+}
+
+button[type="button"] {
+  background-color: rgba(41, 167, 114, 0.5);
+}
+
+button[type="button"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+label[for="fruit-type"] {
+  color: black;
+  margin-right: 39%;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  margin-right: 10px;
+}
+
+button[type="button"] {
+  display: block;
+  margin: 10px;
+  margin-right: 39%;
+}
+
+
+.back-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+.back-button:hover {
+  transform: scale(1.1);
+}
+
+input[type="number"] {
+  border-radius: 5px;
+}
+
+select {
+  border-radius: 5px;
+}
+
+.back-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px 5px #1a237e;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 200px;
+}
+
+.contact-text {
+  margin-bottom: 10px;
+  font-size: 24px;
+  margin-right: 36%;
+}
+
+.contact-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button-text {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.contact-button img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s;
+  margin-right: 5%;
+}
+
+.contact-button:hover img {
+  transform: scale(1.2);
+}
+
+
+@media (min-width: 768px){
+  /* For Laptop  */
+  .imgDisplay{
+      width: 50%;
+      padding-top: 2%;
+  }
+} 
+
+@media (max-width: 768px){
+   /* For Mobile  */
+  .imgDisplay{
+      padding-top: 20%;
+  }
+} 
+
+/* 
+
+FOOTER STARTS
+
+*/
+footer{
+background-color: black;
+margin-bottom: 0;
+padding: 2% 5% 5% 5%;
+margin-right: 0;
+margin-top: 6%;
+}
+
+i{
+color: white;
+}
+
+footer p{
+color: white;
+margin: 0;
+padding:0;
+}
+
+.unq_btn{
+display: flex;
+justify-content: space-evenly;
+}
+
+.unq_btn a{
+display: inline-block;
+text-decoration: none;
+font-size: 25px;
+}
+.unq_btn .fa-stack-1x {
+color: white;
+font-size: 18px;
+}
+.unq_btn .fa-stack-2x {
+transition: .3s;
+}
+.unq_btn .discord .fa-certificate {
+color: #5764f2;
+}
+.unq_btn .fb .fa-certificate {
+color: #3b579e;
+}
+.unq_btn .messenger .fa-certificate {
+color: #09f;
+}
+.unq_btn .instagram .fa-certificate{
+color: #d6249f; 
+}
+.unq_btn a:hover .fa-stack-2x {
+-ms-transform: rotate(60deg);
+-webkit-transform: rotate(60deg);
+transform: rotate(60deg);
+}
+
+@media (min-width: 768px){
+/* For Laptop */
+.unq_btn{
+    
+    justify-content: flex-start;
+}
+footer{
+    margin-top: 6%;
+}
+}
+
+/*
+
+FOOTER ENDS
+
+*/

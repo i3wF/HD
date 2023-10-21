@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="ContactUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Barlow&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<script type="text/javascript">
+  (function() {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('c5Y7sERr7ycnMg0XQ');
+  })();
+</script>
+<script type="text/javascript">
+  window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // generate a five digit number for the contact_number variable
+          this.contact_number.value = Math.random() * 100000 | 0;
+          // these IDs from the previous steps
+          emailjs.sendForm('contact_service', 'contact_form', this)
+              .then(function() {
+                  console.log('SUCCESS!');
+              }, function(error) {
+                  console.log('FAILED...', error);
+              });
+      });
+  }
+</script>
+
+<body>
+
+    <header>
+        <!-- <h1 class="text-center">HAY DAY</h1> -->
+        
+        <!--NavBar Start-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-nav" style="font-size:larger; font-weight: 500;">
+          <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="../index.html">Hay Day</a> -->
+      <img src="../images/Hay_Day_logo.png" class="navbar-brand">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="../index.html">الصفحة الرئيسية</a>
+                  <a class="nav-link" href="../PriceCalculator/PriceCalculator.html">حاسب السعر</a>
+                  <a class="nav-link" href="../BemsCalculator/BemsCalculator.html">حاسب الأدوات</a>
+                  <a class="nav-link" href="../BarnSizeCalculator/BarnSizeCalculator.html">حاسب سعة الحظيرة</a>
+                  <a class="nav-link" href="../DecoCostCalculator/DecoCostCalculator.html">حاسب تكلفة الديكور</a>
+                  <a class="nav-link" href="../ListMaker/listMaker.html">صانع قائمة المنتجات</a>
+                  <a class="nav-link" href="../TownUpgradeCalculator/TownUpgradeCalculator.html">حاسب ترقية البلدة</a>
+                  <a class="nav-link" href="../Harvest-calc/index.html">حاسبة الحصاد</a>
+                  <a class="nav-link" href="../ContactUs/ContactUs.html">تواصل معنا</a>                 
+                </div>
+            </div>
+          </div>
+        </nav>
+        <!--Navbar End-->
+        
+    </header>
+
+  <main>
+   <h1>تواصل معنا</h1>
+
+   <div class="container contactform">
+    <h2>إذا كان لديك أي اقتراحات أو توصيات لموقع الويب الخاص بي أو كنت تواجه أي مشاكل ، يمكنك الاتصال بي عبر الطرق أدناه.</h2>
+    <div class="row">
+      <div class="col align-self-center">
+        
+        <!-- contact form -->
+        <form id="myForm">
+          <!-- name -->
+          <div class="form-group">
+            <label for="name">الأسم</label>
+            <input
+              type="name"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="أكتب اسمك"
+            />
+          </div>
+
+          <!-- email -->
+          <div class="form-group">
+            <label for="email">الايميل</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="أكتب ايميلك"
+            />
+          </div>
+
+          
+          <div class="form-group">
+            <label for="message">الرسالة</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">أرسل</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-4 card" >
+            <div class="card-body">
+              <img src="../images/discord.png">     
+              <p class="card-text">ادخل السيرفر الخاص بي على الديسكورد لنتواصل. <br>كود السيرفر- PxCCnnc529 <br>  أسم المستخدم- Raghav#6164 (يمكنك أرسال طلب صداقة)</p>             
+              <a href="https://discord.gg/PxCCnnc529" class="btn btn-outline-danger">دخول</a>     
+            </div>
+          </div>
+  
+          <div class="col-md-4 card" >
+            <div class="card-body">
+              <img src="../images/facebook.png">         
+              <p class="card-text">يمكنك التواصل معي عبر الماسنجر.<br>أسم المستخدم- Raghav Maskara</p>
+              <a href="https://m.me/maskararaghav" class="btn btn-outline-danger">رسالة</a>          
+            </div>
+          </div>
+  
+          <div class="col-md-4 card" >
+            <div class="card-body">
+              <img src="../images/gmail.jpg">       
+              <p class="card-text">يمكنك ايضاً التواصل معي عبر الإيميل raghavmaskara@gmail.com <br>
+              </p>
+              <a href="mailto:raghavmaskara@gmail.com" class="btn btn-outline-danger">إيميل</a>         
+            </div>
+          </div>
+        </div>
+      
+      </div>
+  </main>
+    
+  <footer>
+    <br>
+    <a href="ContactUs.html" class="btn btn-danger">تواصل معنا</a>  
+    <br><br>
+    <div class="unq_btn">
+            <!--facebook-->
+            <a href="https://www.facebook.com/maskararaghav/" class="fb">
+              <span class="fa-stack">
+                <i class="fa fa-certificate fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x"></i>
+              </span>
+            </a>
+
+            <!--Discord-->
+            <a href="https://discord.gg/PxCCnnc529" class="discord">
+              <span class="fa-stack">
+                <i class="fa fa-certificate fa-stack-2x"></i>
+                <i class="fab fa-discord fa-stack-1x"></i>
+              </span>
+            </a>
+
+            <!--Messenger-->
+            <a href="https://m.me/maskararaghav" class="messenger">
+              <span class="fa-stack">
+                <i class="fa fa-certificate fa-stack-2x"></i>
+                <i class="fab fa-facebook-messenger fa-stack-1x"></i>
+              </span>
+            </a>
+            <!--Instagram-->
+            <a href="https://www.instagram.com/raghavmaskara/" class="instagram">
+              <span class="fa-stack">
+                <i class="fa fa-certificate fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x"></i>
+              </span>
+            </a>
+    </div>
+
+<br>
+  <p>Website Created By- &#169;  Raghav Maskara</p>
+    <br>
+    <p>Credit - 3wF - Saad - Eman Khalid</p>
+  </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="ContactUs.js"></script>
+
+<!-- Default Statcounter code for Hay Day Calculator
+https://raghavmaskara21.github.io/HayDayPriceCalculator.github.io/
+-->
+
+
+
+<script>
+  // listen to the form submission
+  document
+    .getElementById("myForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const serviceID = "service_lx83n9t";
+      const templateID = "template_vt5mapg";
+
+      // send the email here
+      emailjs.sendForm(serviceID, templateID, this).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message Sent Successfully!");
+          document.getElementById("name").value="";
+          document.getElementById("email").value="";
+          document.getElementById("message").value="";
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("FAILED...", error);
+        }
+      );
+    });
+</script>
+
+
+<script type="text/javascript">
+  var sc_project=12512973; 
+  var sc_invisible=1; 
+  var sc_security="3fc304d4"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics
+  Made Easy - StatCounter" href="https://statcounter.com/"
+  target="_blank"><img class="statcounter"
+  src="https://c.statcounter.com/12512973/0/3fc304d4/1/"
+  alt="Web Analytics Made Easy - StatCounter"
+  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <!-- End of Statcounter Code -->
+    
+</body>
+</html>
